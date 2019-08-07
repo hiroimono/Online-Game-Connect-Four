@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>My First Web Page</title>
+	<link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+	<div class="content">
+		<header class="header">
+			<div class="header_div">
+
+				<img id="img_logo" src="assets/sprint.svg" alt="sprint" />
+			</div>
+
+			<div class="header_div">
+				<img id="img_menu" src="assets/hamburgermenu.svg" onclick="openMenu()" alt="menu" />
+			</div>
+		</header>
+
+		<section class="container">
+
+			<div class="main">
+				<div class="main_area">
+
+					<div class="main_img">
+						<div class="rgba"></div>
+						<img id="img_berlin" src="assets/reichstag.jpg" alt="reichstag" />
+					</div>
+
+					<div class="main_text">
+						<h2>Welcome to Berlin and the Future.</h2>
+					</div>
+
+					<p id="button">Get Started</p>
+
+				</div>
+			</div>
+
+			<div class="info clearfix">
+
+				<div id="infobox1" class="infobox">
+					<div class="info_img">
+						<img style="width: 26px;" src="assets/cat.svg" />
+					</div>
+					<div class="info_text">
+						<p><b>Best-in-class Features</b></p>
+						<p>
+							Nobody does this stuff better than us. You can bet your life on that.
+						</p>
+					</div>
+				</div>
+
+				<div id="infobox2" class="infobox">
+					<div class="info_img">
+						<img style="width: 26px;" src="assets/world.svg" />
+					</div>
+					<div class="info_text">
+						<p><b>Reliable Service</b></p>
+						<p>
+							You can count on us to help you whenever you need it. We're talking round the clock service.
+						</p>
+					</div>
+				</div>
+
+				<div id="infobox3" class="infobox">
+					<div class="info_img">
+						<img style="width: 26px;" src="assets/swim.svg" />
+					</div>
+
+					<div class="info_text">
+						<p><b>An Acquired Taste</b></p>
+						<p>
+							It may take a little while for you to warm up to us but once you do you will never want to switch.
+						</p>
+					</div>
+				</div>
+
+				<div id="infobox4" class="infobox">
+					<div class="info_img">
+						<img style="width: 26px;" src="assets/columns.svg" />
+					</div>
+					<div class="info_text">
+						<p><b>No Limits</b></p>
+						<p>
+							There are absolutely no limits. We do not throttle. we do not cap.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="footer">
+
+			<p>
+				<b><span style="font-size: 10px">©</span> 2016 Some Organization</b>
+			</p>
+
+		</div>
+	</div>
+	<div id="hamburger-menu" class="hamburger-menu">
+		<div id="menu" class="menu">
+			<a class="x" onclick="closeMenu()">X</a>
+			<ul>
+				<li><a href="javascript://">Settings</a></li>
+				<li><a href="javascript://">Pricing</a></li>
+				<li><a href="javascript://">Upgrade</a></li>
+				<li><a href="javascript://">Subscribe</a></li>
+				<li><a href="javascript://">Log Out</a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #FF8C00;
+    color: white;
+    z-index: -1;
+}
+
+div p {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 0px;
+}
+
+.score-board {
+    align-self: center;
+    height: 200px;
+    width: 200px;
+    border: 5px solid #FF8C00;
+    border-radius: 15px;
+}
+
+.score-board-text>p {
+    text-align: center;
+    font-size: 20px;
+    background-color: #FF8C00;
+    color: blue;
+}
+
+.playersScores {
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 50px;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    /* border: .05px solid black; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.column {
+    display: inline;
+    float: left;
+}
+
+#play-area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#board {
+    margin: 0;
+    padding: 0;
+    height: 610px;
+    min-width: 710px;
+    border: 5px solid #FF8C00;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.player1 .hole {
+    background-color: green;
+}
+
+.player2 .hole {
+    background-color: #a233ff;
+}
+
+#maske {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+}
+
+#popup .window {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 620px;
+    height: 570px;
+    display: none;
+    z-index: 9999;
+    padding: 0px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#popup #dialog {
+    width: 600px;
+    height: auto;
+    padding: 0px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI Light', sans-serif;
+}
+
+#popup_icerik {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#show-winner {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#show-winner:hover {
+    background-color: blue;
+    color: white;
+    overflow: hidden;
+}
+
+.keySlot {
+    background-color: red;
+}
+
+.button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+button {
+    width: 250px;
+    background-color: #FF8C00;
+    color: white;
+}
+
+#ball {
+    display: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    background: #2FFF54;
+    border: .5px solid purple;
+    /* transition: all 0.5s; */
+}

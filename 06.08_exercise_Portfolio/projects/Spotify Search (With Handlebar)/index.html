@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Spotify search</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<div id="head">
+		<div id="text-in-head">
+			<h1>Search in Spotify</h1>
+		</div>
+	</div>
+
+	<div id="input-field">
+		<div id="search-field">
+			<input class="searchterm" type="text" name='user-input' placeholder="Search...">
+			<select>
+				<option id='artist'>artist</option>
+				<option id='album'>album</option>
+			</select>
+			<button id='submit-button' type="button" class="btn btn-dark">Search</button>
+		</div>
+	</div>
+
+	<div id="container">
+		<div class="results-container"></div>
+		<!-- {{#if this.length == 0}}{{''}}{{else}}{{$('#nothing-found').css('display', 'none');}} -->
+		<script id="results" type="text/x-handlebars-template">
+			{{#items}}
+
+				<div class="gallery">
+					<a target="_blank" href={{images.0.url}}>
+						<img src={{images.0.url}} alt="Forest" width="600" height="400">
+					</a>
+
+					<div class="desc">{{name}}</div>
+				</div>
+			{{/items}}
+		</script>
+	</div>
+	<div id="nothing-found">
+		<div id="text-in-head">
+			<h3>Nothing found!</h3>
+		</div>
+	</div>
+	<div id="more">
+		<div id="text-in-head">
+			<div class="more">More...</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+	<script src='script.js'></script>
+</body>
+
+</html>

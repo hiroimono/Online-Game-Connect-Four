@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Connect Four</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+	<div class='flex'>
+		<div>
+			<p>Let's Play Connect Four!</p>
+		</div>
+	</div>
+	<div id="play-area">
+		<div id="firstPlayersScoreBoard" class='score-board'>
+			<div class="score-board-text">
+				<p>Score:</p>
+				<p>First Player</p>
+				<div>
+					<p id="firstPlayersScore" class="playersScores">0</p>
+				</div>
+			</div>
+		</div>
+		<div id="board">
+			<div id="column0" class="column">
+				<div class='slot row0'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row1'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row2'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row3'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row4'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row5'>
+					<div class="hole"></div>
+				</div>
+			</div>
+			<div id="column1" class="column">
+				<div class='slot row0'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row1'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row2'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row3'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row4 '>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row5'>
+					<div class="hole"></div>
+				</div>
+			</div>
+			<div id="column2" class="column">
+				<div class='slot row0'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row1'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row2'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row3'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row4 '>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row5'>
+					<div class="hole"></div>
+				</div>
+			</div>
+			<div id="column3" class="column">
+				<div class='slot row0'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row1'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row2'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row3'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row4 '>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row5'>
+					<div class="hole"></div>
+				</div>
+			</div>
+			<div id="column4" class="column">
+				<div class='slot row0'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row1'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row2'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row3'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row4 '>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row5'>
+					<div class="hole"></div>
+				</div>
+			</div>
+			<div id="column5" class="column">
+				<div class='slot row0'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row1'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row2'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row3'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row4 '>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row5'>
+					<div class="hole"></div>
+				</div>
+			</div>
+			<div id="column6" class="column">
+				<div class='slot row0'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row1'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row2'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row3'>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row4 '>
+					<div class="hole"></div>
+				</div>
+				<div class='slot row5'>
+					<div class="hole"></div>
+				</div>
+			</div>
+			<div id="ball"></div>
+		</div>
+		<div id="secondPlayersScoreBoard" class='score-board'>
+			<div class="score-board-text">
+				<p>Score:</p>
+				<p>Second Player</p>
+				<div>
+					<p id="secondPlayersScore" class="playersScores">0</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="popup">
+		<div id="dialog" class="window">
+			<div id="popup_icerik">
+				<div class="tenor-gif-embed" data-postid="4115631" data-share-method="host" data-width="100%" data-aspect-ratio="2.2133333333333334"><a href="https://tenor.com/view/congrats-minions-gif-4115631">Congratulations! GIF</a> from <a
+						href="https://tenor.com/search/congrats-gifs">Congrats GIFs</a></div>
+				<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+				<!-- <img style="width:500px; text-align:center;" src="winner.jpg" /> -->
+				<p id='show-winner'></p>
+			</div>
+		</div>
+		<div id="maske"></div>
+	</div>
+	<!-- <div class="button"><button type="button" onclick='fn()'>Restart</button></div> -->
+	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+	<script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

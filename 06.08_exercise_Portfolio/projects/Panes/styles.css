@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 400px;
+    width: 600px;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    border: solid 5px teal;
+    height: 410px;
+    width: 610px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.top-image {
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+    width: 300px;
+}
+
+.bottom-image {
+    position: absolute;
+}
+
+.bar {
+    position: absolute;
+    margin: 0;
+    height: 400px;
+    width: 10px;
+    background-color: teal;
+    z-index: 10;
+    left: 205px;
+}
